@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Hola mundo</title>
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/icons/logo.ico" />
+</head>
+<body>
+    
+    <div class="warpper">
+        <div class="player">
+            <video id="video"  poster="./assets/img/portada.jpeg" src="https://media.w3.org/2010/05/sintel/trailer.mp4" width="900" height="500"></video>
+            <div class="playeroverlay">
+                <h2 class="player-title">Musica Para programar</h2>
+                <div class="player-action"> 
+                    <button class="button" id="resTen" aria-label='Retroceder 10 segundos' title="Retroceder 10 segundos"></button>
+                    <button class="button" id="play"  aria-label='Reproducir' title="Reproducir"></button>
+                    <button class="button" hidden id="pausa" aria-label='Pausar' title="Pausar"></button>
+                    <button class="button" id="moreTen" aria-label='Adelantar 10 segundos' title="Adelantar 10 segundos"></button>
+                </div>
+                <div class="player-progres">
+                    <input id='progress' type="range" value=0 min=0 max="100" step=".1">
+                 </div>
+            </div>
+         </div>
+    </div>
+    <div class="circulo"></div>
+    <div class="circulo-end"></div>
+</body>
+
+<script src="./assets/js/app.js"></script>
+</html>

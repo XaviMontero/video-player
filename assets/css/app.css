@@ -1,0 +1,99 @@
+@import "./button.css";
+
+body {
+ background-color: #43DDE6;
+ font-family: Arial, Helvetica, sans-serif;
+ overflow: hidden;
+}
+
+.warpper{
+    max-inline-size: 900px;
+    margin: auto;
+}
+
+.player {
+ margin-block-start: 100px;
+ position: relative;
+}
+
+.player video{
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    vertical-align: middle;
+    object-fit: cover;
+
+}
+
+.player-title {
+    color: white;
+    position: absolute;
+    inset-block-start: 0;
+    margin: 0;
+    inset-inline-start:20px;
+}
+
+.player-action {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid tomato;
+    z-index: 2;
+    gap: 20px;
+}
+
+.player-progres{
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0;
+    display: flex;
+    padding: 10px;
+    z-index: 2;
+}
+
+.player-progres input {
+    flex: 1;
+}
+
+.playeroverlay{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: .3s opacity;
+}
+
+.player:hover .playeroverlay {
+    opacity: 1;
+}
+
+.circulo {
+    width: 30vw;
+    height: 30vw;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: transparent;
+    border: 80px solid #26A5BC;
+    margin: -130px;
+    position: relative;
+    z-index: -1;
+    top: -700px;
+     
+}
+
+.circulo-end {
+    width: 60vw;
+    height: 60vw;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: transparent;
+    border: 80px solid #26A5BC;
+    margin: -290px;
+    position: relative;
+    z-index: -1;
+    top: -700px;
+    left: 1500px;
+     
+}
